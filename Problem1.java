@@ -14,7 +14,8 @@ public class Problem1 {
     //These lines were added for inputs   
     Scanner input = new Scanner(System.in);
     
-    
+    //Part A
+        System.out.println("Part A:");
     //These lines were added for input for letter A  
     System.out.println("Enter a number for the product");
     int c = input.nextInt();// compile error fixed: declaring c as int
@@ -29,10 +30,11 @@ public class Problem1 {
 
     ++c;
     }//compile error fixed: missing bracket
-    
+        System.out.println("");//prints whitespace
+        
     ////////////////////////////////////////////////////////////////////////
     //letter B
-    
+        System.out.println("Part B: ");
     System.out.println("Enter 1 for female or 0 for male");
     int gender = input.nextInt();
    
@@ -45,17 +47,21 @@ public class Problem1 {
    
       System.out.println( "Man" );
     }
-    
+        System.out.println("");//priints whitespace
+        
     
     ///////////////////////////////////////////////////////////////////////////
     //letter C
-    System.out.println("Enter number for ");
-    int z = input.nextInt();
-    int sum = 1;
-    while ( z >= 0 && z<=10){//logic error fixed: beginning and braces needed and runtime error fixed: did not have an ending
-
+        System.out.println("Part C:");
+    System.out.println("Enter number for ");// ask user from imput
+    int z = input.nextInt();//enter interger in which program is set to start
+    int sum = 1;// set sum = 1
+    while ( z >= 0 && z <=5){//logic error fixed: beginning and braces needed and runtime error fixed: did not have an ending
+    sum += z; //sum will now equal to sum+1
+    System.out.println(sum);// print new value for sum
+    z++;//repeat this loop while condition is met
     }//brace needed for problem 3
-    System.out.println(sum);
+    
     }//needed an extra closing brace   
 }
     
